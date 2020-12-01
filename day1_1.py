@@ -1,6 +1,3 @@
-from urllib.request import urlopen
-import urllib3
-
 values = [int(line.rstrip("\n")) for line in open("input1.txt", "r")]
 
 
