@@ -1,4 +1,4 @@
-values = [int(line.rstrip("\n")) for line in open("input1.txt", "r")]
+values = [int(line.rstrip("\n")) for line in open("input1.in", "r")]
 
 
 def find_pairs_adding_to_target(target, values):
