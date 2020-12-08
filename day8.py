@@ -12,7 +12,6 @@ def run_code(X, part):
     acc = 0
     idx_used = []
     i = 0
-    last_i = 0
 
     while 0 <= i < len(X):
         x = X[i].split()
@@ -31,14 +30,11 @@ def run_code(X, part):
             i += 1
 
         elif inst == "jmp":
-            last_i = i
             i += val
 
         elif inst == "acc":
             acc += val
             i += 1
-
-        last_i = i
 
         if i == len(X):
             return acc
